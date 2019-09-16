@@ -4,10 +4,11 @@ RECIPE {
     energy_required = 05,
     enabled = false,
     ingredients = {
+		{"storage-tank", 1},
         {"py-tank-4000", 1},
-        {"pipe", 8},
-        {"iron-stick", 30},
-        {"steel-plate", 30}
+        {"pipe", 25},
+        {"iron-plate", 5},
+        {"steel-plate", 15}
     },
     results = {
         {"py-tank-6500", 1}
@@ -21,7 +22,7 @@ ITEM {
     icon_size = 32,
     flags = {},
     subgroup = "py-storage-tanks",
-    order = "a-c[py-items]",
+    order = "a-f[py-items]",
     place_result = "py-tank-6500",
     stack_size = 10
 }

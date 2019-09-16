@@ -22,13 +22,14 @@ require("prototypes/buildings/containers/storehouse")
 require("prototypes/buildings/containers/warehouse")
 
 --Storage Tanks
+require("prototypes/buildings/fluid-tanks/tanks-500")
 require("prototypes/buildings/fluid-tanks/tanks-1000")
 require("prototypes/buildings/fluid-tanks/tanks-1500")
-require("prototypes/buildings/fluid-tanks/tanks-3000")
+
 require("prototypes/buildings/fluid-tanks/tanks-4000")
 require("prototypes/buildings/fluid-tanks/tanks-5000")
-require("prototypes/buildings/fluid-tanks/tanks-7000")
 require("prototypes/buildings/fluid-tanks/tanks-6500")
+require("prototypes/buildings/fluid-tanks/tanks-7000")
 require("prototypes/buildings/fluid-tanks/tanks-8000")
 
 require("prototypes/buildings/valves/check-valve")
@@ -37,11 +38,13 @@ require("prototypes/buildings/valves/underflow-valve")
 
 --tank size settings check
 if settings.startup["py-tank-adjust"].value then
-	data.raw["storage-tank"]["py-tank-3000"].fluid_box.base_area = 100
-	data.raw["storage-tank"]["py-tank-4000"].fluid_box.base_area = 275
-	data.raw["storage-tank"]["py-tank-5000"].fluid_box.base_area = 650
-	data.raw["storage-tank"]["py-tank-6500"].fluid_box.base_area = 750
-	data.raw["storage-tank"]["py-tank-8000"].fluid_box.base_area = 1250
+	data.raw["storage-tank"]["py-tank-500"].fluid_box.base_area = 50
+	
+	data.raw["storage-tank"]["py-tank-4000"].fluid_box.base_area = 400
+	data.raw["storage-tank"]["py-tank-5000"].fluid_box.base_area = 500
+	data.raw["storage-tank"]["py-tank-6500"].fluid_box.base_area = 650
+	data.raw["storage-tank"]["py-tank-7000"].fluid_box.base_area = 900
+	data.raw["storage-tank"]["py-tank-8000"].fluid_box.base_area = 1600
 end
 
 --Other
