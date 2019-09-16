@@ -11,8 +11,8 @@ RECIPE('logistic-chest-requester'):remove_ingredient('advanced-circuit')
 --pyph tank adjust
 if settings.startup["py-tank-adjust"].value then
 	if mods["pypetroleumhandling"] then
-		data.raw["storage-tank"]["py-tank-9000"].fluid_box.base_area = 1800
-		data.raw["storage-tank"]["py-tank-10000"].fluid_box.base_area = 2500
+		data.raw["storage-tank"]["py-tank-9000"].fluid_box.base_area = 2000
+		data.raw["storage-tank"]["py-tank-10000"].fluid_box.base_area = 3000
 	end
 end
 
