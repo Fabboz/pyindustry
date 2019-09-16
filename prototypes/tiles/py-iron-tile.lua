@@ -29,7 +29,7 @@ ENTITY {
     type = "tile",
     name = "py-iron-tile",
     needs_correction = false,
-    minable = {hardness = 0.2, mining_time = 0.1, result = "py-iron-tile"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "py-iron-tile"},
     mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
     collision_mask = {"ground-tile"},
     walking_speed_modifier = 1.4,
@@ -83,5 +83,6 @@ ENTITY {
     },
     map_color = defines.color.darkgrey,
     pollution_absorption_per_second = 0,
+	decorative_removal_probability = 1,
     vehicle_friction_modifier = _G.stone_path_vehicle_speed_modifier
 }
